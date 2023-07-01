@@ -2,10 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
     
+    <!-- Vista de login -->  
+    <div id="login" class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input id="username" type="text" required="">
+            <label>Usuario</label>
+          </div>
+          <div class="user-box">
+            <input id="password" type="password" required="">
+            <label>Contraseña</label>
+          </div>
+          <div class="error">
+            <span id="error"></span>
+          </div>
+          
+          <a id="btn_continuar" href="#">
+            Continuar
+          </a>
+        </form>
+      </div>      
+
+    <!-- Vista home -->
+    <div id="home">        
+        <div class="container_home">
+            <div class="salir">
+                <button id="btn_salir">Salir</button>
+            </div>
+            
+            <div class="info">
+                <h1 id="bienvenida"></h1>
+                <h3>Selecciona una opción</h3>
+            </div>
+    
+            <div class="btn_group">
+                <button id="btn_consulta"><i class="fa-solid fa-file-invoice-dollar"></i>Consultar Saldo</button>
+                <button id="btn_ingresa"><i class="fa-solid fa-sack-dollar"></i>Ingresar Monto</button>
+                <button id="btn_retira"><i class="fa-solid fa-money-bill-transfer"></i>Retirar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/5f23e4cc26.js" crossorigin="anonymous"></script>
 </body>
 </html>
